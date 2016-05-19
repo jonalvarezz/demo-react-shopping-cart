@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "React Shopping Cart example for my React How to talk",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --output-public-path=/dist/"
   },
   "author": "jonalvarezz",
   "license": "MIT",
@@ -14,5 +17,8 @@
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "webpack": "^1.13.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.14.1"
   }
 }
