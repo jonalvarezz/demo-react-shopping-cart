@@ -20,6 +20,11 @@ module.exports = {
     ]
   },
 
+  // Enable imports like `require('file')` instead of `require('file.js')`
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+
   // Output
   output: {
     path: __dirname + '/dist',
