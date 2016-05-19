@@ -8,7 +8,16 @@ module.exports = {
 
   // Loaders(plugins) - transformations
   module: {
-
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['react'],
+        },
+        exclude: /node_modules/
+      }
+    ]
   },
 
   // Output

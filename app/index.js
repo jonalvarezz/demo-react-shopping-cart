@@ -1,6 +1,8 @@
 
-var body = document.body
-var h1 = document.createElement('H1')
+var React = require('react')
+var render = require('react-dom').render
 
-h1.textContent = 'Hello Pereira JS'
-body.appendChild(h1)
+render(
+  <h1>Hello Pereira JS from React</h1>,
+  document.getElementById('app')
+)
