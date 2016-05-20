@@ -16,7 +16,10 @@ module.exports = {
           presets: ['react'],
         },
         exclude: /node_modules/
-      }
+      },
+      // Load stylus
+      // You can ignore this, not React related
+      { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader', exclude: /node_modules/ }
     ]
   },
 

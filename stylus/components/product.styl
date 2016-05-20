@@ -1,0 +1,53 @@
+
+.product
+  padding 10px
+  display flex
+  text-align center
+  > .wrapper
+    width 100%
+    display flex
+    flex-flow column wrap
+    padding 20px
+    border 1px solid grey-lighter
+    transition border-color speed easing
+
+  &:hover
+    > .wrapper
+      border-color grey
+    .product-image
+      transform translate3d(0,-5px,0)
+
+  .product-content
+    flex 1 0 auto
+
+.product-image
+  transform translate3d(0, 2px,0)
+  transition all 300ms easing
+
+.product-title
+  font-weight 300
+  margin 0 0 10px
+  font-size size-3
+
+.product-price
+  font-size size-3
+  color grey-light
+
+.product-button
+  background none
+  font-size 14px
+  border 1px solid grey
+  color grey
+  text-transform uppercase
+  padding 8px 20px
+  transition background-color 200ms easing
+  &:hover,
+  &:focus
+    background-color grey-dark
+    color white
+  &:disabled
+    opacity .7
+    cursor not-allowed
+    &:hover
+      background-color initial
+      color grey

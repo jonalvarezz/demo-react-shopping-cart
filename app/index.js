@@ -1,3 +1,4 @@
+require('../stylus/main.styl'); //Styles - ignore
 
 var React = require('react')
 var render = require('react-dom').render

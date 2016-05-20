@@ -12,10 +12,21 @@ var Product = React.createClass({
   render: function () {
     var props = this.props
     return (
-      <li>
-        <img src={props.image} alt={props.title} />
-        <h2>{props.title}</h2>
-        <p>$ {props.price}</p>
+      <li className="product">
+        <div className="wrapper">
+          <header className="product-image">
+            <img src={props.image} alt={props.title} />
+          </header>
+          <div className="product-content">
+            <h2 className="product-title">{props.title}</h2>
+          </div>
+          <footer className="product-action">
+            <p className="product-price">$ {props.price}</p>
+            <button className="button product-button">
+              Add to cart
+            </button>
+          </footer>
+        </div>
       </li>
     )
   }
