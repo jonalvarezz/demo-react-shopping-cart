@@ -25,3 +25,5 @@ to see the steps that have been used to create this app from scratch.
 * Stateless components
 * Enabling ES2015
 * Writing React with ES2015
+
+Actual progress: **Composables apps**. I'm working in the code to make sure every commit is self explanatory and cover one feature.
