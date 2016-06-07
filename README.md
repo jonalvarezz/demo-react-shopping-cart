@@ -27,3 +27,9 @@ to see the steps that have been used to create this app from scratch.
 * Writing React with ES2015
 
 Actual progress: **Composables apps**. I'm working in the code to make sure every commit is self explanatory and cover one feature.
+
+## Install
+```
+npm install
+npm run start
+```
